@@ -3,6 +3,7 @@ Creador: David Ramírez Plaza.
 
 **Descripción**  
 Diseño de página web para una óptica, utilizando HTML, CSS, JavaScript y PHP.
+
 Fue realizado para una un proyecto semestral de Ingeniería en Informática de AIEP.
 
 ## Estructura del repositorio
