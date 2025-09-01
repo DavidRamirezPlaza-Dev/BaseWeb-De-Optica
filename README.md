@@ -2,7 +2,7 @@ Creador: David Ramírez Plaza.
 # BaseWeb-De-Optica
 
 **Descripción**  
-Diseño de página web para una óptica, utilizando HTML, CSS, JavaScript y PHP.
+Diseño básico de página web para una óptica, utilizando HTML, CSS, JavaScript. También utilizando PHP para el envío de correos.
 
 Fue realizado para una un proyecto semestral de Ingeniería en Informática de AIEP.
 
