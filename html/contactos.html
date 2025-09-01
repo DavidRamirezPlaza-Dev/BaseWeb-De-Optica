@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/pagina_de_contacto.css">
+</head>
+<body>
+    <header class="hero">
+        <p class = "gratis"><b>¡Reservas de chequeo gratis! <a href="../html/reserva.html">AQUÍ</a></p></b>
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href = "../index.html"><img src="../images/logo.png" alt="Logo" height="100"></a>
+            </div>
+            <ul class = "nav__link nav__link--menu">
+                <li class = "nav__items">
+                    <a href = "../index.html" class = "nav__links">Inicio</a>
+                </li>
+                <li class = "nav__items">
+                    <a href = "reserva.html" class = "nav__links">Reserva de Horas</a>
+                </li>
+                <li class = "nav__items">
+                    <a href = "productos.html" class = "nav__links">Productos ↓</a>
+                    <ul class = "sub_nav">
+                        <li><a href = "../LentesContacto/lentesContacto.html" class = "sub_links">Lentes de Contacto</a></li>
+                        <li><a href = "../LentesOpticos/lentesopticos.html" class = "sub_links">Lentes Ópticos</a></li>
+                        <li><a href = "#" class = "sub_links">Lentes de Sol</a></li>
+                    </ul>
+                </li>
+                <li class = "nav__items">
+                    <a href = "sustentable.html" class = "nav__links">Sustentabilidad</a>
+                </li>
+                <li class = "nav__items">
+                    <a href = "sucursales.html" class = "nav__links">Sucursales</a>
+                </li>
+                <li class = "nav__items">
+                    <a href = "contactos.html" class = "nav__links">Contactos</a>
+                </li>
+            </ul>
+            </ul>
+        </nav>
+        <section class="hero__container container">
+            <br></br>
+            
+            <h1 class="hero__title">Visión Óptima</h1>
+            <p class ="hero__paragraph">
+                <b>¿Necesitas contactarnos para mayor información? <br>
+                Todo lo que buscas está aquí. <br>
+                ¡Llena el formulario y nos pondremos en contacto!.</b>
+                
+        </section>
+    </header>
+    <h1>FORMULARIO DE CONTACTO</h1>
+    <form action="../php/contacto.php" method="post" autocomplete="on" class = "formulario">
+        <br><br><br>
+        <label for = "nombre"><b>Nombre y Apellido: </b></label><br>
+        <input type = "text" name = "nombre" id = "nombre" size="35" placeholder="Ingrese su Nombre..." required><br><br>
+        <label for = "email"><b>Correo electronico: </b></label><br>
+        <input type="email" name="email" size="" placeholder="Ingrese su email..."  required><br><br>
+        <label for = "asunto"><b>Asunto: </b></label><br>
+        <input type="text" id="asunto" name="asunto" placeholder="Ingrese un asunto..." required><br><br>
+        <label for = "mensaje"><b>Comentarios: </b> </label><br>
+        <textarea name = "mensaje" id = "mensaje" cols= "82" rows = "15" placeholder="Ingrese sus comentarios..." required></textarea><br><br>
+        <br>
+          <input type="submit" name="submit" class="button" value="ENVIAR">
+    </form>
+    <footer class = "footer">
+        <div class="footer-column">
+        <ul>
+            <h3>Contacto</h3>
+            <br>
+            <li>
+                <img src="../images/wsp.png" alt="Sucursal Vision Optima">
+                Sucursal Las Condes: +569 79121212
+            </li>
+            <li>
+                <img src="../images/wsp.png" alt="Sucursal Vision Optima">
+                Sucursal Independencia: +569 85431012
+            </li>
+            <li>
+                <img src="../images/wsp.png" alt="Sucursal Vision Optima">
+                Sucursal Maipú: +569 44556677
+            </li>
+            <li>
+                <img src="../images/wsp.png" alt="Sucursal Vision Optima">
+                Sucursal Colina: +569 88991011
+            </li>
+        </ul>
+        <div class="footer-column">
+        <ul>
+            <h3>Servicios</h3>
+            <br>
+            <li>Convenio</li>
+            <li>Operativos Oftalmológicos</li>
+            <li>Visitas a Domicilio</li>
+        </ul>
+        <div class="footer-column">
+        <ul>
+            <h3>Términos y Condiciones</h3>
+            <br>
+            <li>Devolución</li>
+            <li>Reembolso</li>
+            <li>Cambio de Productos</li>
+            <li>Garantías</li>
+        </ul>
+        </div>
+    </footer>
+</body>
+</html>

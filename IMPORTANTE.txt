@@ -1,0 +1,2 @@
+El index de la página web, se encuentra en el directorio de HTML. 
+Solo hay que hacer doble click para abrirlo.

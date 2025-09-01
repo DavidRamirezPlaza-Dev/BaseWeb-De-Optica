@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Optica Reserva</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/estilos_reserva.css">
+</head>
+<body>
+    <header class="hero">
+        <p class = "gratis"><b>¡Reservas de chequeo gratis! <a href="../html/reserva.html">AQUÍ</a></p></b>
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href = "../index.html"><img src="../images/logo.png" alt="Logo" height="100"></a>
+            </div>
+            <ul class = "nav__link nav__link--menu">
+                <li class = "nav__items">
+                    <a href = "../index.html" class = "nav__links">Inicio</a>
+                </li>
+                <li class = "nav__items">
+                    <a href = "reserva.html" class = "nav__links">Reserva de Horas</a>
+                </li>
+                <li class = "nav__items">
+                    <a href = "productos.html" class = "nav__links">Productos ↓</a>
+                    <ul class = "sub_nav">
+                        <li><a href = "../LentesContacto/lentesContacto.html" class = "sub_links">Lentes de Contacto</a></li>
+                        <li><a href = "../LentesOpticos/lentesopticos.html" class = "sub_links">Lentes Ópticos</a></li>
+                        <li><a href = "#" class = "sub_links">Lentes de Sol</a></li>
+                    </ul>
+                </li>
+                <li class = "nav__items">
+                    <a href = "sustentable.html" class = "nav__links">Sustentabilidad</a>
+                </li>
+                <li class = "nav__items">
+                    <a href = "sucursales.html" class = "nav__links">Sucursales</a>
+                </li>
+                <li class = "nav__items">
+                    <a href = "contactos.html" class = "nav__links">Contactos</a>
+                </li>
+            </ul>
+            </ul>
+        </nav>
+        <section class="hero__container container">
+            <br>
+            <h1 class="hero__title">Reservas de Horas Gratis Visión Óptima</h1>
+            <p class ="hero__paragraph">
+                <b>¿Necesitas reservar una hora? <br>
+                Todo lo que buscas está aquí. <br>
+                Encuentra los horarios para Operativos Oftalmológicos o Visitas a Domicilio.</b>               
+        </section>
+    </header>
+    <section class = "construccion">
+        <div class="pdd">
+            <form name="formulario" action = "../php/reserva.php" method="post" autocomplete="on">
+                <h1>INFORMACION DE CONTACTO</h1>
+                <p>Ingrese su contacto para poder comunicarnos con usted y agendarle una hora.</p>
+                <br>
+                <p class="fondoP"><b>Nombre: </b></p>
+                <input type="text" name="nombre" size="50" placeholder="Ingrese su nombre y apellido" required>
+                <br><br>
+                <p><b>Correo Electrónico: </b></p>
+                <input type="text" name="email" size="50" placeholder="Ingrese su email" pattern=".*@.*" required>
+                <br><br>
+                <p><b>Telefono: </b></p>
+                <input type="text" name="telefono" size="13" placeholder="+56912345678" maxlength="14" pattern="\+[0-9]{3}[0-9]{4}[0-9]{4}" required>
+                <br><br>
+                <p><b>Sucursal: </b></p>
+                <select name="sucursal" required>
+                    <option value="Las condes">Las condes</option>
+                    <option value="Independencia">Independencia</option>
+                    <option value="Maipu">Maipu</option>
+                    <option value="Colina">Colina</option>
+                </select>
+                <br><br>
+                <p><b>Día de Atención: </b>></p>
+                <input type="date" name="fechaAtencion" min="2023-07-07" max="2023-12-30" required><br><br>
+                <div class="pdd2">
+                    <input type="submit" name="submit" class="button" value="ENVIAR">
+                </div>
+                <br>
+                <ul class="infoAdicional">
+                    <li><p>El horario de atencion es por orden de llegada.</p></li>
+                    <li><p>El horario de atencion del tecnologo medico es desde las 14:00 horas hasta las 18:00 horas, de lunes a viernes.</p></li>
+                    <li><p>El chequeo visual es gratis por la compra de un lente optico. En caso contrario, el chequeo visual tiene un costo de $7000 por persona.</p></li>
+                </ul>
+            </form><br>
+        </div>
+    </section>
+    <footer class = "footer">
+        <div class="footer-column">
+        <ul>
+            <h3>Contacto</h3>
+            <br>
+            <li>
+                <img src="../images/wsp.png" alt="Sucursal Vision Optima">
+                Sucursal Las Condes: +569 79121212
+            </li>
+            <li>
+                <img src="../images/wsp.png" alt="Sucursal Vision Optima">
+                Sucursal Independencia: +569 85431012
+            </li>
+            <li>
+                <img src="../images/wsp.png" alt="Sucursal Vision Optima">
+                Sucursal Maipú: +569 44556677
+            </li>
+            <li>
+                <img src="../images/wsp.png" alt="Sucursal Vision Optima">
+                Sucursal Colina: +569 88991011
+            </li>
+        </ul>
+        <div class="footer-column">
+        <ul>
+            <h3>Servicios</h3>
+            <br>
+            <li>Convenio</li>
+            <li>Operativos Oftalmológicos</li>
+            <li>Visitas a Domicilio</li>
+        </ul>
+        <div class="footer-column">
+        <ul>
+            <h3>Términos y Condiciones</h3>
+            <br>
+            <li>Devolución</li>
+            <li>Reembolso</li>
+            <li>Cambio de Productos</li>
+            <li>Garantías</li>
+        </ul>
+        </div>
+    </footer>

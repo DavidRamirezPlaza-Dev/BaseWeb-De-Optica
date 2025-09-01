@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Optica Productos</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/lentesContacto.css">
+</head>
+<body>
+    <header class="hero">
+        <p class = "gratis"><b>¡Reservas de chequeo gratis! <a href="../html/reserva.html">AQUÍ</a></p></b>
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href = "../index.html"><img src="../images/logo.png" alt="Logo" height="100"></a>
+            </div>
+            <ul class = "nav__link nav__link--menu">
+                <li class = "nav__items">
+                    <a href = "../index.htmll" class = "nav__links">Inicio</a>
+                </li>
+                <li class = "nav__items">
+                    <a href = "../html/reserva.html" class = "nav__links">Reserva de Horas</a>
+                </li>
+                <li class = "nav__items">
+                    <a href = "../html/productos.html" class = "nav__links">Productos ↓</a>
+                    <ul class = "sub_nav">
+                        <li><a href = "../LentesContacto/lentesContacto.html" class = "sub_links">Lentes de Contacto</a></li>
+                        <li><a href = "../LentesOpticos/lentesopticos.html" class = "sub_links">Lentes Ópticos</a></li>
+                        <li><a href = "#" class = "sub_links">Lentes de Sol</a></li>
+                    </ul>
+                </li>
+                <li class = "nav__items">
+                    <a href = "../html/sustentable.html" class = "nav__links">Sustentabilidad</a>
+                </li>
+                <li class = "nav__items">
+                    <a href = "../html/sucursales.html" class = "nav__links">Sucursales</a>
+                </li>
+                <li class = "nav__items">
+                    <a href = "../html/contactos.html" class = "nav__links">Contactos</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="hero__container container">
+            <br></br>
+            
+            <h1 class="hero__title">Productos Visión Óptima</h1>
+            <p class ="hero__paragraph">
+                <b>Los mejores productos para ti.<br>
+                Encuentra todo lo que necesitas en nuestra selección de productos.<br></b>             
+        </section>
+    </header>
+
+    <div class="container">
+        <div class="LentesContacto">
+            <div class="txt1">
+                <h2>Lentes de Contacto</h2>
+                <span id = "valor" data-valor="30350">Compra una unidad por solo $30.350</span>
+            </div>
+        </div>
+        <picture>
+            <img src="../images/productos_img/producto18.jpg" alt="Acuvue Multifocal">
+        </picture>
+        <br><br>
+        <div class="sectionInputs1">
+            <span>INGRESE LA GRADUACIÓN:</span><br><br>
+            <label for="graduacion">
+                <span>Poder (Esfera):</span>
+                <select name="poder" id="poder">
+                    <option value="-2.00">-2.00</option>
+                    <option value="-1.75">-1.75</option>
+                    <option value="-1.50">-1.50</option>
+                    <option value="-1.25">-1.25</option>
+                    <option value="-1.00">-1.00</option>
+                    <option value="-0.75">-0.75</option>
+                    <option value="-0.50">-0.50</option>
+                    <option value="-0.25">-0.25</option>
+                    <option value="+0.25">+0.25</option>
+                    <option value="+0.50">+0.50</option>
+                    <option value="+0.75">+0.75</option>
+                    <option value="+1.00">+1.00</option>
+                    <option value="+1.25">+1.25</option>
+                    <option value="+1.50">+1.50</option>
+                    <option value="+1.75">+1.75</option>
+                </select>
+            </label><br><br>
+            <label for="cantidad">
+                <span>Ingrese la cantidad:</span>
+                <input id="cantidad" name="cantidad" type="number" min="0" max="20" value="1" oninput="calcular('cantidad')">
+            </label>
+            <label>
+                <span>Total</span>
+                <p id="total"></p>
+                <p id="quantity"></p>
+                <span>+IVA</span>
+            </label>
+        </div><br><br>
+        <div class="sectionButtons1">
+            <button type="submit" class="btnComprar">Comprar</button>
+        </div><br><br>
+        <div class="DescripcionLentesContacto">
+            <div class="txt2">
+                <h2>Descripción:</h2>
+                <span>Superficie con nuevas tecnologías HydraGlyde que proporciona una mayor humectación durante todo el día y Smartshield que evita el acumulo de proteínas</span>
+            </div>
+        </div>
+    </div>
+    
+    <footer class = "footer">
+        <div class="footer-column">
+        <ul>
+            <h3>Contacto</h3>
+            <br>
+            <li>
+                <img src="../images/wsp.png" alt="Sucursal Vision Optima">
+                Sucursal Las Condes: +569 79121212
+            </li>
+            <li>
+                <img src="../images/wsp.png" alt="Sucursal Vision Optima">
+                Sucursal Independencia: +569 85431012
+            </li>
+            <li>
+                <img src="../images/wsp.png" alt="Sucursal Vision Optima">
+                Sucursal Maipú: +569 44556677
+            </li>
+            <li>
+                <img src="../images/wsp.png" alt="Sucursal Vision Optima">
+                Sucursal Colina: +569 88991011
+            </li>
+        </ul>
+        <div class="footer-column">
+        <ul>
+            <h3>Servicios</h3>
+            <br>
+            <li>Convenio</li>
+            <li>Operativos Oftalmológicos</li>
+            <li>Visitas a Domicilio</li>
+        </ul>
+        <div class="footer-column">
+        <ul>
+            <h3>Términos y Condiciones</h3>
+            <br>
+            <li>Devolución</li>
+            <li>Reembolso</li>
+            <li>Cambio de Productos</li>
+            <li>Garantías</li>
+        </ul>
+        </div>
+    </footer>
+</body>
+<script src="../js/calculo.js"></script>
+</html>

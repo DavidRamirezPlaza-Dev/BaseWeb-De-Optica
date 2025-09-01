@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    
+
+}
+.titulo1{
+    text-align: center;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--pading-container)
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    grid-template-rows: 100px 1fr;
+    color: #000000;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #7979798c 0%, #ffffff8c 100%), url('../images/img_alusiva.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+}
+/* NAV */
+
+.gratis{
+    width: auto;
+    height: 20px;
+    text-align: center;
+    background-color: grey;
+}
+.nav{
+    --pading-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav__title{
+    font-weight: 300;
+}
+
+.nav__link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 1em;
+}
+
+.nav__items{
+    list-style: none;
+}
+
+
+.nav__links{
+    color:#000000;
+    text-decoration: none;
+    
+}
+
+/*SUBNAV*/
+
+.sub_nav {
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: grey;
+    padding: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.nav__items:hover .sub_nav {
+    display: block;
+}
+  
+.sub_links {
+    color: #000000;
+    text-decoration: none;
+}
+  
+  
+.sub_nav li {
+    margin-bottom: 10px;
+}
+  
+.sub_nav li:last-child {
+    margin-bottom: 0;
+}
+
+/*Hero Conteiner */
+.hero__container{
+    max-width: 800px;
+    --padding-container:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: right;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.hero__title{
+    font-size: 3rem;
+}
+.hero__paragraph{
+    font-size: 1.2rem;
+    margin-bottom: 250px;
+}
+
+/*h1*/
+.titulo{
+    text-align: center;
+}
+
+.construccion{
+    margin-left: 250px;
+    align-items: center;
+}
+.contruccion h2{
+    font-size: large;
+}
+
+.button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  
+  }
+
+/*footer*/
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 200px;
+    background-color: #000000;
+}
+
+.footer-column {
+    align-items: justify;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 25em;
+}
+
+.footer-column h3 {
+    color: white;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.footer-column li {
+    color: white;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.footer-column img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+

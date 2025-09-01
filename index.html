@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Optima</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/slide.js"></script>
+</head>
+<body>
+    <header class="hero">
+        <p class = "gratis"><b>¡Reservas de chequeo gratis! <a href="./html/reserva.html">AQUÍ</a></p></b>
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href = "index.html"><img src="./images/logo.png" alt="Logo" height="100"></a>
+            </div>
+            <ul class = "nav__link nav__link--menu">
+                <li class = "nav__items">
+                    <a href = "index.html" class = "nav__links">Inicio</a>
+                </li>
+                <li class = "nav__items">
+                    <a href = "./html/reserva.html" class = "nav__links">Reserva de Horas</a>
+                </li>
+                <li class = "nav__items">
+                    <a href = "./html/productos.html" class = "nav__links">Productos ↓</a>
+                    <ul class = "sub_nav">
+                        <li><a href = "./LentesContacto/lentesContacto.html" class = "sub_links">Lentes de Contacto</a></li>
+                        <li><a href = "./LentesOpticos/lentesopticos.html" class = "sub_links">Lentes Ópticos</a></li>
+                        <li><a href = "#" class = "sub_links">Lentes de Sol</a></li>
+                    </ul>
+                </li>
+                <li class = "nav__items">
+                    <a href = "./html/sustentable.html" class = "nav__links">Sustentabilidad</a>
+                </li>
+                <li class = "nav__items">
+                    <a href = "./html/sucursales.html" class = "nav__links">Sucursales</a>
+                </li>
+                <li class = "nav__items">
+                    <a href = "./html/contactos.html" class = "nav__links">Contactos</a>
+                </li>
+            </ul>
+            </ul>
+        </nav>
+        <section class="hero__container container">
+            <br></br>
+            
+            <h1 class="hero__title">Visión Óptima</h1>
+            <p class ="hero__paragraph">
+                <b>¿Lentes de contacto, lentes de sol o lentes ópticos? <br>
+                Todo lo que buscas está aquí. <br>
+                Encuentra los lentes de tus sueños y los que más se acomoden a tú estilo.</b>
+                
+        </section>
+    </header>
+    <section class = "reserva">
+        <a href = "./hmtl/reserva.html"><img src="./images/reservar_index.png"></a>
+    </section>
+    <aside class = "aside">
+        <h1 class = "titulo">Artículos de Interés</h1>
+        <div id="carousel">
+            <div class="slide">
+              <a href = 'https://www.mayoclinic.org/es-es/diseases-conditions/astigmatism/symptoms-causes/syc-20353835#:~:text=El%20astigmatismo%20es%20una%20imperfección,del%20ojo%20tienen%20curvas%20dispares.' target="_blank"><img src="./images/carousel_img/astigmatismo.jpg" alt="Astigmatismo"></a>
+              <p>Conoce más sobre el Astigmatismo</p>
+            </div>
+            <div class="slide">
+              <a href = 'https://www.nei.nih.gov/espanol/aprenda-sobre-la-salud-ocular/enfermedades-y-afecciones-de-los-ojos/cataratas#:~:text=Una%20catarata%20es%20un%20área,a%20medida%20que%20usted%20envejece.' target="_blank"><img src="./images/carousel_img/catarata.jpg" alt="Catarata"></a>
+              <p>Conoce más sobre las Cataratas</p>
+            </div>
+            <div class="slide">
+              <a href = 'https://medlineplus.gov/spanish/ency/article/001004.htm#:~:text=Es%20un%20trastorno%20en%20el,conoce%20como%20"ojos%20bizcos".' target="_blank"><img src="./images/carousel_img/estrabismo.jpg" alt="Estrabismo"></a>
+              <p>Conoce más sobre el Estrabismo</p>
+            </div>
+            <div class="slide">
+                <a href = 'https://www.mayoclinic.org/es-es/diseases-conditions/nearsightedness/symptoms-causes/syc-20375556#:~:text=La%20miopía%20es%20una%20afección,(refracten)%20de%20forma%20incorrecta.' target="_blank"><img src="./images/carousel_img/miopia.jpg" alt="Miopía"></a>
+                <p>Conoce más sobre la Miopía</p>
+            </div>
+            <div class="slide">
+                <a href = 'https://www.aao.org/salud-ocular/enfermedades/desgarramiento-desprendimiento-retina' target="_blank"><img src="./images/carousel_img/retina.jpg" alt="Retina"></a>
+                <p>Conoce más sobre el Desprendimiento de Retina</p>
+            </div>
+            <div class="slide">
+                <a href = 'https://medlineplus.gov/spanish/ency/article/001002.htm#:~:text=Se%20trata%20de%20una%20rara,sufren%20alguna%20forma%20de%20daltonismo.' target="_blank"><img src="./images/carousel_img/daltonismo.jpg" alt="Daltonismo"></a>
+                <p>Conoce más sobre el Daltonismo</p>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button id="prevBtn">Anterior</button>
+            <button id="nextBtn">Siguiente</button>
+        </div>
+    </aside>
+    <article class = "article">
+        <h1 class = "titulo">Descubre nuestra selección de lentes</h1>
+        <br>
+        <p class = "parrafo_articulo">En nuestra tienda, encontrarás una variedad de opciones en lentes de contacto, lentes ópticos y lentes de sol. Ya sea que necesites corregir tu visión o protegerte del sol, tenemos los lentes perfectos para ti.
+        Nuestros lentes de contacto te brindarán comodidad y claridad visual durante todo el día. Con diferentes tipos de lentes, como los desechables diarios o los de uso prolongado, podrás encontrar la opción que se ajuste a tus necesidades y estilo de vida.
+        Si prefieres los lentes ópticos, contamos con una amplia gama de diseños modernos y elegantes. Nuestro equipo de profesionales te ayudará a encontrar el par ideal que resalte tu estilo y te brinde una visión nítida y precisa.
+        Para proteger tus ojos de los rayos del sol, tenemos una colección de lentes de sol de alta calidad. Desde estilos clásicos hasta tendencias de moda, nuestros lentes de sol te brindarán protección UV y un estilo sofisticado.
+        Visítanos hoy mismo y descubre la calidad y variedad que ofrecemos en lentes de contacto, lentes ópticos y lentes de sol. ¡Mejora tu visión y realza tu estilo con nuestros productos!</p>
+        <br>
+        <a href = "./html/productos.html"><button class ="button">Ir a los productos</button></a>
+    </article>
+    <footer class = "footer">
+        <div class="footer-column">
+        <ul>
+            <h3>Contacto</h3>
+            <br>
+            <li>
+                <img src="./images/wsp.png" alt="Sucursal Vision Optima">
+                Sucursal Las Condes: +569 79121212
+            </li>
+            <li>
+                <img src="./images/wsp.png" alt="Sucursal Vision Optima">
+                Sucursal Independencia: +569 85431012
+            </li>
+            <li>
+                <img src="./images/wsp.png" alt="Sucursal Vision Optima">
+                Sucursal Maipú: +569 44556677
+            </li>
+            <li>
+                <img src="./images/wsp.png" alt="Sucursal Vision Optima">
+                Sucursal Colina: +569 88991011
+            </li>
+        </ul>
+        <div class="footer-column">
+        <ul>
+            <h3>Servicios</h3>
+            <br>
+            <li>Convenio</li>
+            <li>Operativos Oftalmológicos</li>
+            <li>Visitas a Domicilio</li>
+        </ul>
+        <div class="footer-column">
+        <ul>
+            <h3>Términos y Condiciones</h3>
+            <br>
+            <li>Devolución</li>
+            <li>Reembolso</li>
+            <li>Cambio de Productos</li>
+            <li>Garantías</li>
+        </ul>
+        </div>
+    </footer>
+</body>
+</html>
